@@ -70,7 +70,7 @@ class Breakout extends Phaser.Scene
     {
         brick.disableBody(true, true);
         this.score += 5
-        scoreBoard.setText('Score: ' + score);
+        this.scoreBoard.setText('Score: ' + this.score);
         
         if (this.bricks.countActive() === 0)
         {
