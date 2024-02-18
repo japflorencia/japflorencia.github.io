@@ -1,9 +1,8 @@
-<script>
+<script lang="ts">
 import SidebarLink from './SidebarLink.vue';
 import { collapsed, toggleSidebar, sidebarWidth } from './state';
 
 export default {
-    props: {},
     components: { SidebarLink },
     setup() {
         return { collapsed, toggleSidebar, sidebarWidth };
@@ -75,4 +74,3 @@ export default {
     transition: 0.2s linear;
 }
 </style>
-```
