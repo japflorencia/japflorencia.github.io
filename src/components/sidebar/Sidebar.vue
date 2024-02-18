@@ -19,7 +19,7 @@ export default {
             <span v-else>Sidebar</span>
         </h1>
         <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-        <SidebarLink to="/storybook" icon="fa-regular fa-object-group">Storybook</SidebarLink>
+        <SidebarLink to="https://japflorencia.github.io/storybook" icon="fa-regular fa-object-group">Storybook</SidebarLink>
         <span class="collapse-icon" :class="{ 'rotate-180': collapsed }" @click="toggleSidebar">
             <font-awesome-icon icon="fa-regular fa-share-from-square" />
         </span>

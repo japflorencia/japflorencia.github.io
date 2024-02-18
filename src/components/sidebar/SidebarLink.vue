@@ -24,23 +24,28 @@ export default {
 </script>
 
 <template>
-    <router-link :to="to" class="link" :class="{ active: isActive }">
+    <component :is="to.startsWith('http') ? 'a' : 'router-link'" :key="to"
+        v-bind="to.startsWith('http') ? { href: to } : { to }" class="link" :class="{ active: isActive }">
         <font-awesome-icon class="icon" :icon="icon" />
         <transition name="fade">
             <span v-if="!collapsed">
                 <slot />
             </span>
         </transition>
-    </router-link>
+    </component>
 </template>
 
 <style scoped>
-.fade-enter-active, .fade-leave-active {
+.fade-enter-active,
+.fade-leave-active {
     transition: opacity 0.1s;
 }
-.fade-enter, .fade-leave-to {
+
+.fade-enter,
+.fade-leave-to {
     opacity: 0;
 }
+
 .link {
     display: flex;
     align-items: center;
@@ -63,6 +68,7 @@ export default {
     background-color: var(--sidebar-bg);
     color: var(--sidebar-text-color-hover);
 }
+
 .link.active {
     background-color: var(--sidebar-bg);
     color: var(--sidebar-text-color-hover);
