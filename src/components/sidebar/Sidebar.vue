@@ -20,9 +20,9 @@ export default {
         </h1>
         <img alt="Vue logo" class="logo" src="@/assets/robot.svg" width="125" height="125" />
         <SidebarLink to="/" icon="fa-solid fa-home">Home</SidebarLink>
-        <SidebarLink to="https://japflorencia.github.io/storybook" icon="fa-solid fa-book">Storybook</SidebarLink>
-        <SidebarLink to="https://tortilla.japflorencia.es" icon="fa-solid fa-utensils">Tortilla App</SidebarLink>
-        <SidebarLink to="https://rpg.japflorencia.es" icon="fa-solid fa-dice-d20">RPG Toolkit</SidebarLink>
+        <SidebarLink to="http://japflorencia.github.io/storybook" icon="fa-solid fa-book">Storybook</SidebarLink>
+        <SidebarLink to="http://tortilla.japflorencia.es" icon="fa-solid fa-utensils">Tortilla App</SidebarLink>
+        <SidebarLink to="http://rpg.japflorencia.es" icon="fa-solid fa-dice-d20">RPG Toolkit</SidebarLink>
         <SidebarLink to="/about" icon="fa-solid fa-id-card">About Me</SidebarLink>
         <span class="collapse-icon" :class="{ 'rotate-180': collapsed }" @click="toggleSidebar">
             <font-awesome-icon icon="fa-solid fa-share-from-square" />
