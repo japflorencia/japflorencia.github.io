@@ -10,25 +10,25 @@ const projects = ref([
     description: 'Interactive component library and design system documentation. Showcasing reusable components and design patterns.',
     tags: ['Vue', 'Components', 'Design System'],
     url: 'https://japflorencia.github.io/storybook',
-    icon: 'fa-regular fa-object-group',
+    icon: 'fa-solid fa-object-group',
     color: 'from-blue-500 to-cyan-400'
   },
   {
     id: 2,
     title: 'Tortilla App',
-    description: 'A delicious recipe and cooking companion app. Discover, create, and share your favorite tortilla recipes.',
+    description: 'The perfect companion to choose who pays team\'s breakfast this time.',
     tags: ['Vue', 'App', 'Recipes'],
     url: 'https://tortilla.japflorencia.es',
-    icon: 'fa-regular fa-utensils',
+    icon: 'fa-solid fa-utensils',
     color: 'from-orange-500 to-red-400'
   },
   {
     id: 3,
     title: 'RPG Toolkit',
-    description: 'Comprehensive toolkit for RPG game development and world-building. Tools for game designers and developers.',
+    description: 'Comprehensive toolkit for RPG game masters. Tools for players and game masters.',
     tags: ['Vue', 'Games', 'Development'],
     url: 'https://rpg.japflorencia.es',
-    icon: 'fa-regular fa-dice-d20',
+    icon: 'fa-solid fa-dice-d20',
     color: 'from-purple-500 to-pink-400'
   }
 ])

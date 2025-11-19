@@ -46,7 +46,7 @@ const scrollToProjects = () => {
           <a href="https://github.com/japflorencia" target="_blank" rel="noopener" class="social-link" title="GitHub">
             <font-awesome-icon icon="fa-brands fa-github" />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link" title="LinkedIn">
+          <a href="https://linkedin.com/japflorencia" target="_blank" rel="noopener" class="social-link" title="LinkedIn">
             <font-awesome-icon icon="fa-brands fa-linkedin" />
           </a>
           <a href="https://twitter.com" target="_blank" rel="noopener" class="social-link" title="Twitter">
@@ -57,7 +57,7 @@ const scrollToProjects = () => {
       
       <div class="hero-visual">
         <div class="avatar-container">
-          <div class="avatar-glow"></div>
+          <div class="avatar-glow">/assets/Masau.png</div>
           <div class="avatar">
             <font-awesome-icon icon="fa-solid fa-code" />
           </div>
