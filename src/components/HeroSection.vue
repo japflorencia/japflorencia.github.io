@@ -57,9 +57,9 @@ const scrollToProjects = () => {
       
       <div class="hero-visual">
         <div class="avatar-container">
-          <div class="avatar-glow">/assets/Masau.png</div>
+          <div class="avatar-glow"></div>
           <div class="avatar">
-            <font-awesome-icon icon="fa-solid fa-code" />
+            <img src="@/assets/Masau.png" alt="Avatar" class="avatar-image" />
           </div>
         </div>
       </div>
@@ -330,7 +330,14 @@ const scrollToProjects = () => {
   font-size: 5rem;
   color: white;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.3);
-  animation: rotate 20s linear infinite;
+  overflow: hidden;
+}
+
+.avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 @keyframes rotate {

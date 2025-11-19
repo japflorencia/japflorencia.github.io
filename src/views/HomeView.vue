@@ -17,7 +17,7 @@ const projects = ref([
     id: 2,
     title: 'Tortilla App',
     description: 'The perfect companion to choose who pays team\'s breakfast this time.',
-    tags: ['Vue', 'App', 'Recipes'],
+    tags: ['Python', 'App'],
     url: 'https://tortilla.japflorencia.es',
     icon: 'fa-solid fa-utensils',
     color: 'from-orange-500 to-red-400'
@@ -26,7 +26,7 @@ const projects = ref([
     id: 3,
     title: 'RPG Toolkit',
     description: 'Comprehensive toolkit for RPG game masters. Tools for players and game masters.',
-    tags: ['Vue', 'Games', 'Development'],
+    tags: ['React', 'Games', 'Development'],
     url: 'https://rpg.japflorencia.es',
     icon: 'fa-solid fa-dice-d20',
     color: 'from-purple-500 to-pink-400'
