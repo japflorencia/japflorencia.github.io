@@ -52,31 +52,38 @@ export default {
 
     cursor: pointer;
     position: relative;
-    font-weight: 400;
+    font-weight: 500;
     user-select: none;
 
-    margin: 0.1em 0;
-    padding: 0.4em;
-    border-radius: 0.25em;
-    height: 1.5em;
+    margin: 0.5rem 0.75rem;
+    padding: 0.6rem 0.75rem;
+    border-radius: 0.5rem;
+    height: 2rem;
 
     color: var(--sidebar-text-color);
     text-decoration: none;
+    transition: all 0.25s ease;
 }
 
 .link:hover {
-    background-color: var(--sidebar-bg);
+    background-color: rgba(255, 255, 255, 0.2);
     color: var(--sidebar-text-color-hover);
+    transform: translateX(4px);
 }
 
 .link.active {
-    background-color: var(--sidebar-bg);
+    background-color: rgba(255, 255, 255, 0.25);
     color: var(--sidebar-text-color-hover);
+    border-left: 3px solid rgba(255, 255, 255, 0.8);
 }
 
 .link .icon {
     flex-shrink: 0;
-    width: 25px;
-    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 </style>

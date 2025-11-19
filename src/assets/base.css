@@ -19,6 +19,14 @@
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+
+  /* Custom theme colors */
+  --color-primary: #667eea;
+  --color-primary-dark: #764ba2;
+  --color-accent: #f97316;
+  --bg-light: #f5f7fa;
+  --bg-mute: #e8ecf1;
+  --text-secondary: #718096;
 }
 
 /* semantic color variables for this project */
@@ -47,6 +55,10 @@
 
     --color-heading: var(--vt-c-text-dark-1);
     --color-text: var(--vt-c-text-dark-2);
+
+    --bg-light: #1a202c;
+    --bg-mute: #2d3748;
+    --text-secondary: #cbd5e0;
   }
 }
 
@@ -67,7 +79,6 @@ body {
     background-color 0.5s;
   line-height: 1.6;
   font-family:
-    Inter,
     -apple-system,
     BlinkMacSystemFont,
     'Segoe UI',
@@ -83,4 +94,23 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background-mute);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-dark);
 }
