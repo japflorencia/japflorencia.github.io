@@ -2,29 +2,63 @@
 import { ref } from 'vue'
 
 const skills = ref([
-  { category: 'Frontend', items: ['Vue.js', 'TypeScript', 'React', 'Tailwind CSS', 'Vite'] },
-  { category: 'Backend', items: ['Node.js', 'Python', 'Express', 'REST APIs'] },
-  { category: 'Tools', items: ['Git', 'Docker', 'GitHub', 'VS Code'] },
-  { category: 'Design', items: ['Figma', 'UI/UX', 'Storybook', 'Component Libraries'] }
+  { 
+    category: 'Frontend', 
+    items: ['React', 'Vue.js', 'TypeScript', 'Sass', 'Storybook', 'Cypress', 'Jest'] 
+  },
+  { 
+    category: 'Backend & DevOps', 
+    items: ['Node.js', 'Express', 'Docker', 'Heroku', 'Redis', 'PHP'] 
+  },
+  { 
+    category: 'Testing & QA', 
+    items: ['Cypress', 'Jest', 'Enzyme', 'Cucumber', 'e2e Testing', 'Unit Testing'] 
+  },
+  { 
+    category: 'Tools & Methodologies', 
+    items: ['Git', 'Scrum', 'Kanban', 'CircleCI', 'Splunk', 'Grafana', 'Slack'] 
+  }
 ])
 
 const experiences = ref([
   {
-    year: '2023 - Present',
-    title: 'Full Stack Developer',
-    description: 'Building modern web applications with Vue.js and TypeScript'
+    year: 'Sep 2023 - Present',
+    title: 'Senior Frontend Developer',
+    company: 'Jungheinrich Digital Solutions',
+    description: 'Frontend development for e-commerce platforms with implementation of comprehensive testing strategies using React.js and Cypress.'
   },
   {
-    year: '2022 - 2023',
+    year: 'Apr 2022 - Aug 2023',
+    title: 'Senior Full Stack Engineer',
+    company: 'Parser',
+    description: 'Full stack development for major British economic newspaper. Managed subscriber flows, implemented SSO technologies, and handled security monitoring. Tech stack: React, TypeScript, Node.js, Redis, Grafana.'
+  },
+  {
+    year: 'Sep 2021 - Apr 2022',
+    title: 'Senior Frontend Developer',
+    company: 'Stack & Vault',
+    description: 'React development for Scout24, a leading real estate platform. Built scalable applications with TypeScript, Sass, and comprehensive testing.'
+  },
+  {
+    year: 'Feb 2019 - Sep 2021',
+    title: 'Senior Frontend Developer',
+    company: 'Sweepr Technologies',
+    description: 'React applications for smart home automation system supporting mobile and voice-activated devices (Alexa, Google). Tech stack: React, Redux, Jest, Cypress.'
+  },
+  {
+    year: 'Mar 2018 - Feb 2019',
+    title: 'Mobile Developer',
+    company: 'Telefónica Educación Digital',
+    description: 'Mobile development for ProFuturo educational initiative. Built apps using Ionic 3, Angular 4, and TypeScript.'
+  },
+  {
+    year: 'Jul 2015 - Mar 2018',
     title: 'Frontend Developer',
-    description: 'Developing responsive user interfaces and component libraries'
-  },
-  {
-    year: '2021 - 2022',
-    title: 'Junior Developer',
-    description: 'Learning and contributing to various web projects'
+    company: 'Mitula Group',
+    description: 'Frontend web development for classified ads marketplace. Specialized in responsive design, SEO optimization, and e2e testing with InternJS.'
   }
 ])
+
 </script>
 
 <template>
@@ -44,32 +78,30 @@ const experiences = ref([
           <div class="bio-text">
             <h2>Who Am I?</h2>
             <p>
-              I'm a full-stack developer with a passion for creating elegant solutions to complex problems. 
-              With expertise in modern web technologies, I specialize in building scalable applications using Vue.js, 
-              TypeScript, and other cutting-edge tools.
+              I'm a Senior Frontend Developer with over 10 years of experience building scalable web applications and digital solutions. 
+              Specialized in React.js and TypeScript, I've led development efforts at cutting-edge companies including Jungheinrich Digital Solutions, Parser, and Sweepr Technologies.
             </p>
             <p>
-              My journey in web development started with a curiosity about how things work on the internet. 
-              Since then, I've grown to love the craft of building user interfaces and exploring the latest technologies 
-              that make the web more interactive and engaging.
+              My expertise spans full-stack development with a strong focus on frontend architecture, testing automation (Cypress, Jest), and agile methodologies. 
+              I'm passionate about writing clean, maintainable code and building high-performance applications that deliver exceptional user experiences.
             </p>
             <p>
-              When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, 
-              or sharing knowledge with the community.
+              Currently working at Jungheinrich Digital Solutions as a Senior Frontend Developer, where I develop e-commerce solutions and implement comprehensive testing strategies. 
+              I'm committed to continuous learning and sharing knowledge with the development community.
             </p>
           </div>
           <div class="bio-stats">
             <div class="stat">
-              <div class="stat-number">50+</div>
+              <div class="stat-number">10+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">10+</div>
               <div class="stat-label">Projects</div>
             </div>
             <div class="stat">
               <div class="stat-number">5+</div>
-              <div class="stat-label">Years</div>
-            </div>
-            <div class="stat">
-              <div class="stat-number">100%</div>
-              <div class="stat-label">Dedicated</div>
+              <div class="stat-label">Companies</div>
             </div>
           </div>
         </div>
@@ -99,6 +131,7 @@ const experiences = ref([
             <div class="timeline-content">
               <div class="timeline-year">{{ exp.year }}</div>
               <h3>{{ exp.title }}</h3>
+              <div class="timeline-company">{{ exp.company }}</div>
               <p>{{ exp.description }}</p>
             </div>
           </div>
@@ -114,11 +147,11 @@ const experiences = ref([
             <font-awesome-icon icon="fa-brands fa-github" />
             GitHub
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener" class="cta-button">
+          <a href="https://www.linkedin.com/in/japflorencia/" target="_blank" rel="noopener" class="cta-button">
             <font-awesome-icon icon="fa-brands fa-linkedin" />
             LinkedIn
           </a>
-          <a href="mailto:contact@japflorencia.es" class="cta-button">
+          <a href="mailto:japflorencia@gmail.com" class="cta-button">
             <font-awesome-icon icon="fa-solid fa-envelope" />
             Email
           </a>

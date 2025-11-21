@@ -27,7 +27,7 @@ const scrollToProjects = () => {
         </p>
         
         <p class="description">
-          Full-stack developer with expertise in Vue.js, TypeScript, and modern web technologies. 
+          Full-stack developer with expertise in React.js, TypeScript, and modern web technologies. 
           I build elegant solutions to complex problems.
         </p>
         
@@ -46,12 +46,12 @@ const scrollToProjects = () => {
           <a href="https://github.com/japflorencia" target="_blank" rel="noopener" class="social-link" title="GitHub">
             <font-awesome-icon icon="fa-brands fa-github" />
           </a>
-          <a href="https://linkedin.com/japflorencia" target="_blank" rel="noopener" class="social-link" title="LinkedIn">
+          <a href="https://www.linkedin.com/in/japflorencia/" target="_blank" rel="noopener" class="social-link" title="LinkedIn">
             <font-awesome-icon icon="fa-brands fa-linkedin" />
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener" class="social-link" title="Twitter">
+          <!--<a href="https://twitter.com" target="_blank" rel="noopener" class="social-link" title="Twitter">
             <font-awesome-icon icon="fa-brands fa-x-twitter" />
-          </a>
+          </a>-->
         </div>
       </div>
       

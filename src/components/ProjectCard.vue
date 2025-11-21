@@ -146,18 +146,6 @@ const handleClick = (url: string) => {
   transition: all 0.3s ease;
 }
 
-.project-card:hover .card-footer {
-  gap: 1rem;
-}
-
-.arrow-icon {
-  transition: transform 0.3s ease;
-}
-
-.project-card:hover .arrow-icon {
-  transform: translate(2px, -2px);
-}
-
 @media (max-width: 768px) {
   .project-card {
     min-height: 350px;

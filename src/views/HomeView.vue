@@ -30,6 +30,15 @@ const projects = ref([
     url: 'https://rpg.japflorencia.es',
     icon: 'fa-solid fa-dice-d20',
     color: 'from-purple-500 to-pink-400'
+  },
+  {
+    id: 4,
+    title: 'Kanji Bot',
+    description: 'Telegram bot for learning one kanji a day',
+    tags: ['Node','Bot'],
+    url: 'https://t.me/+U_lNZHUo75QxYmJk',
+    icon: 'fa-solid fa-robot',
+    color: 'from-yellow-500 to-yellow-200'
   }
 ])
 </script>
